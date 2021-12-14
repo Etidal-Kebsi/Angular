@@ -1,0 +1,8 @@
+<table border="1">
+    <tr *ngFor="let le of liste">
+        <td> {{le.id}}</td>
+        <td> {{le.nom}}</td>
+        <td> {{le.prenom}}</td>
+        <a (click)="delete(le.id)" href="#"> Supprimer</a>
+    </tr>
+</table>
